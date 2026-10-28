@@ -1,0 +1,8 @@
+bc0ce0ad937b34362119f06041bed91f419c7dd0d006f4f4d4c3731ffd733f1e  RnD-Tax-Workbench-NZ-1.0.0-mac-arm64.dmg
+fc3f4b9d91c70e4274ba5f8f01baec1be6f6a8d745f4359715c26ae17d02270c  RnD-Tax-Workbench-NZ-1.0.0-mac-x64.dmg
+7fcd1db6c5cefddc120f47583895f378fbbd7026af00f7155f4b818195cd2105  RnD-Tax-Workbench-NZ-1.0.0-mac-arm64.zip
+dce619d4592b3c4f3b08f1dae0b3e5a62da4bc67f49a3e8bd478922caa3c9acf  RnD-Tax-Workbench-NZ-1.0.0-mac-x64.zip
+ffd82d57222fdbff0f1eccc6283a78c8a1a2b1c13abf1ec449c72c291df03de1  RnD-Tax-Workbench-NZ-1.0.0-win-x64.exe
+cdb49a1f79fef168a816e9469929e73278c41c17a91ef2923166aff22c69f2ae  RnD-Tax-Workbench-NZ-1.0.0-x86_64.AppImage
+44d9bf3eb3c2addf8b08e921e6c277571c4c14098a715ab08ce0df5ef2667922  RnD-Tax-Workbench-NZ-1.0.0-linux-amd64.deb
+d1b96b39c52ed4a3284b17bac800fa974abcd8ad5b72d9b393fb6311258b59fb  RnD-Tax-Workbench-NZ-1.0.0-linux-x86_64.rpm
