@@ -2,26 +2,39 @@ Desktop application for preparing New Zealand Research and Development Tax Incen
 
 **Download page: https://blog.rdinnovate.com/workbench-nz/**
 
-### What's new in 1.0.1
+### What's new in 1.0.2
 
-- **Actual hours only.** Employee costs are apportioned on each employee's own hours worked. The
-  app no longer assumes a 40-hour, 52-week year when hours are missing: the employee is flagged
-  and their costs are left out until the hours are entered on Payroll.
-- **New Zealand throughout.** Remaining Australian wording, references and currency in screens,
-  exports and AI instructions now use New Zealand terms (Inland Revenue, IRD number, subpart LY, NZD).
-- **Timesheet template** rewritten for New Zealand: blank rows for actual hours worked.
-- **Newer AI models.** AI-assisted steps now use Claude Opus 5.5 and Sonnet 5.5.
-- **Where AI steps are processed** is stated in Settings (see "Your data" below).
+A maintenance release of fixes. The law the app applies is unchanged from 1.0.1.
 
-Existing claims are kept. Installed 1.0.0 apps offer the update automatically.
+**Credits and auto top-up**
+- Auto top-up settings and saving a card now work from inside the app. In 1.0.1 these screens
+  could fail with "Failed to fetch".
+- After saving a card, the confirmation page says the card is saved and auto top-up is on, and that
+  nothing has been charged. It no longer says a payment was made.
+- When the credit balance cannot be fetched (offline or a slow connection), the gauge shows "—" and
+  "Balance not available" instead of "0.0 Critical".
+
+**Timesheets and classification**
+- A "Non-R&D hours" column is never read as R&D hours.
+- In a wide timesheet, "Total hours" is read as hours worked, not R&D hours (which put everyone at
+  100% R&D).
+- Columns headed with activity references, as in the app's own template, are matched to those
+  activities directly, without an AI step. Employees with no R&D hours are carried at 0 hours.
+- Saved R&D hours agree with the allocations on screen.
+- A trial balance uploaded on its own now shows the classification tabs, and Next to Apportionment
+  is available.
+- An overhead account with no stored category is bucketed from its account name, the same way the
+  Apportionment screen shows it.
+
+Existing claims are kept. Installed 1.0.1 apps offer the update automatically.
 
 ### Which file
 | Platform | File |
 |---|---|
-| macOS, Apple silicon (M1–M4) | `RnD-Tax-Workbench-NZ-1.0.1-mac-arm64.dmg` |
-| macOS, Intel | `RnD-Tax-Workbench-NZ-1.0.1-mac-x64.dmg` |
-| Windows 10/11, 64-bit | `RnD-Tax-Workbench-NZ-1.0.1-win-x64.exe` |
-| Linux, 64-bit | `RnD-Tax-Workbench-NZ-1.0.1-x86_64.AppImage`, the `.deb` or the `.rpm` |
+| macOS, Apple silicon (M1–M4) | `RnD-Tax-Workbench-NZ-1.0.2-mac-arm64.dmg` |
+| macOS, Intel | `RnD-Tax-Workbench-NZ-1.0.2-mac-x64.dmg` |
+| Windows 10/11, 64-bit | `RnD-Tax-Workbench-NZ-1.0.2-win-x64.exe` |
+| Linux, 64-bit | `RnD-Tax-Workbench-NZ-1.0.2-x86_64.AppImage`, the `.deb` or the `.rpm` |
 
 The `.zip`, `.blockmap` and `.yml` files are used by automatic updates and are not needed
 for installation.
