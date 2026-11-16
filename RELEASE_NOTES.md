@@ -2,39 +2,47 @@ Desktop application for preparing New Zealand Research and Development Tax Incen
 
 **Download page: https://blog.rdinnovate.com/workbench-nz/**
 
-### What's new in 1.0.2
+### What's new in 1.0.3
 
-A maintenance release of fixes. The law the app applies is unchanged from 1.0.1.
+A maintenance release of fixes. The law the app applies is unchanged from 1.0.2.
 
-**Credits and auto top-up**
-- Auto top-up settings and saving a card now work from inside the app. In 1.0.1 these screens
-  could fail with "Failed to fetch".
-- After saving a card, the confirmation page says the card is saved and auto top-up is on, and that
-  nothing has been charged. It no longer says a payment was made.
-- When the credit balance cannot be fetched (offline or a slow connection), the gauge shows "—" and
-  "Balance not available" instead of "0.0 Critical".
+**Feedstock, contractors and expenses**
+- Feedstock: the inputs excluded are matched to the feedstock product, first through its linked
+  activity and then across the claim, before other goods.
+- Contractors follow the New Zealand rules throughout: approved research providers, associated
+  persons at cost, and overseas R&D under the 10% cap. Cards and allocations show the claimable
+  amount at cost for associates.
+- Number fields no longer show a leading 0.
 
-**Timesheets and classification**
-- A "Non-R&D hours" column is never read as R&D hours.
-- In a wide timesheet, "Total hours" is read as hours worked, not R&D hours (which put everyone at
-  100% R&D).
-- Columns headed with activity references, as in the app's own template, are matched to those
-  activities directly, without an AI step. Employees with no R&D hours are carried at 0 hours.
-- Saved R&D hours agree with the allocations on screen.
-- A trial balance uploaded on its own now shows the classification tabs, and Next to Apportionment
-  is available.
-- An overhead account with no stored category is bucketed from its account name, the same way the
-  Apportionment screen shows it.
+**Financials and classification**
+- Unticking a profit and loss or balance sheet item as R&D also clears the matching general ledger
+  account.
+- The reconciliation check reads a balance sheet whose liabilities and equity are entered as
+  negative (credit) figures correctly.
+- The "No items classified as R&D" warning appears only when cost lines were reviewed.
 
-Existing claims are kept. Installed 1.0.1 apps offer the update automatically.
+**Projects, payroll and outputs**
+- Narratives are written from the project notes you pasted in, as well as the activity details.
+- Payroll uses New Zealand terms: PAYE and employer KiwiSaver.
+- The general approval checklist is tucked away once every project is approved.
+- The IRD number is formatted, and the carried-forward note on the accounting page appears only
+  when there is an amount carried forward.
+- Feedstock & Grants shows as started once a feedstock item or grant is entered.
+
+**Other**
+- After a top-up, the confirmation page waits for the new balance instead of showing "0 credits".
+- First sign-in no longer fails when several screens ask for the account at the same moment.
+- British spelling and singular wording ("1 account", "1 activity", "1 section exceeds").
+
+Existing claims are kept. Installed 1.0.2 apps offer the update automatically.
 
 ### Which file
 | Platform | File |
 |---|---|
-| macOS, Apple silicon (M1–M4) | `RnD-Tax-Workbench-NZ-1.0.2-mac-arm64.dmg` |
-| macOS, Intel | `RnD-Tax-Workbench-NZ-1.0.2-mac-x64.dmg` |
-| Windows 10/11, 64-bit | `RnD-Tax-Workbench-NZ-1.0.2-win-x64.exe` |
-| Linux, 64-bit | `RnD-Tax-Workbench-NZ-1.0.2-x86_64.AppImage`, the `.deb` or the `.rpm` |
+| macOS, Apple silicon (M1–M4) | `RnD-Tax-Workbench-NZ-1.0.3-mac-arm64.dmg` |
+| macOS, Intel | `RnD-Tax-Workbench-NZ-1.0.3-mac-x64.dmg` |
+| Windows 10/11, 64-bit | `RnD-Tax-Workbench-NZ-1.0.3-win-x64.exe` |
+| Linux, 64-bit | `RnD-Tax-Workbench-NZ-1.0.3-x86_64.AppImage`, the `.deb` or the `.rpm` |
 
 The `.zip`, `.blockmap` and `.yml` files are used by automatic updates and are not needed
 for installation.
